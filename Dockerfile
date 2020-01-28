@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+EXPOSE 5000
 RUN apt-get update && apt-get install -y python python-pip
 RUN pip install flask
 COPY . /app
